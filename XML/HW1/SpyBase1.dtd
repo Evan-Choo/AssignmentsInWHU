@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % pc "(#PCDATA)">
+<!ENTITY % c "CDATA">
+
+<!ELEMENT info (aliasTable, missionTable, spyTable)>
+
+<!ELEMENT aliasTable (row)*>
+<!ELEMENT missionTable (row)*>
+<!ELEMENT spyTable (row)*>
+
+<!ELEMENT row ((spyREF, (alias | (date, description, status))) | (firstName, lastName))*>
+
+<!ELEMENT spyREF %pc;>
+<!ELEMENT alias %pc;>
+<!ELEMENT date %pc;>
+<!ELEMENT description %pc;>
+<!ELEMENT status %pc;>
+<!ELEMENT firstName %pc;>
+<!ELEMENT lastName %pc;>
+
+<!ATTLIST row aID %c; #IMPLIED>
+<!ATTLIST row spyID %c; #IMPLIED>
+<!ATTLIST row mID %c; #IMPLIED>
