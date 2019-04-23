@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Calc.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Objects</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Calc.java</span></div><h1>Calc.java</h1><pre class="source lang-java linenums"><span class="fc" id="L1">public class Calc {</span>
+    public int add(int a, int b){
+<span class="fc" id="L3">        return a + b;</span>
+    }
+
+    //sub-1: first failing test
+//    static public int sub(int a, int b){
+//        return 0;
+//    }
+
+    //sub-2: make first test pass
+    //sub-3: triangulate with another value-failed
+//    static public int sub(int a,  int b){
+//        return 2;
+//    }
+
+    //sub-3; triangulate with another value-passed
+    public int sub(int a, int b){
+<span class="fc" id="L19">        return a - b;</span>
+    }
+
+    //mul-1: first failing test
+//    static public mul sub(int a, int b){
+//        return 0;
+//    }
+
+    //mul-2: make first test pass
+    //mul-3: triangulate with another value-failed
+//    static public int mul(int a,  int b){
+//        return 8;
+//    }
+
+    //mul-3; triangulate with another value-passed
+    public int mul(int a, int b){
+<span class="fc" id="L35">        return a * b;</span>
+    }
+
+    //div-1: first failing test
+//    static public int div(int a, int b){
+//        return 0;
+//    }
+
+    //div-2: make first test pass
+    //div-3: triangulate with another value-failed
+//    static public int div(int a, int b){
+//        return 2;
+//    }
+
+    //div-3: triangulate with another value-passed
+    //div-4: triangulate with another type-failed
+//    static public int div(int a, int b){
+//        return a / b;
+//    }
+
+    //div-4: triangulate with another type-passed
+    //div-5: triangulate with exception-failed
+//    static public double div(int a, int b){
+//        return (double)a / b;
+//    }
+
+    //div-5: triangulate with exception-passed
+    public double div(int a, int b) throws Exception{
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        if(b == 0)</span>
+<span class="fc" id="L64">            throw new Exception(&quot;divided by 0&quot;);</span>
+
+<span class="fc" id="L66">        return (double)a / b;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
