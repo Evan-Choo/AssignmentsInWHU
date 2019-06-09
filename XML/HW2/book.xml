@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="book.xsd">
+    <title>Data On The Web</title>
+    <author>Tang</author>
+    
+    <section id="ID-1" difficulty="3">
+        <title>1-1.abcd</title>
+        <p>using analysis tool</p>
+        <figure width="200" height="300">
+            <title>1-1-1.wire</title>
+            <image source="internet"/>
+        </figure>
+        
+        <section>
+            <title>1-1-1.hhhh</title>
+            <p>hhhhhhhh</p>
+        </section>
+    </section>
+</book>

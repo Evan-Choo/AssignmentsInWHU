@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <Flight flightId="LX180">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>06:00:00</departure>        
+        <arrival>10:01:00</arrival>
+        <source>NPL</source>
+        <destination>AMS</destination>
+    </Flight>
+    <Flight flightId="LX181">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>06:20:00</departure>        
+        <arrival>10:01:00</arrival>
+        <source>NPL</source>
+        <destination>ZRH</destination>
+    </Flight>
+    <Flight flightId="LX182">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>06:37:00</departure>
+        <arrival>11:14:00</arrival>
+        <source>NPL</source>
+        <destination>MSW</destination>
+    </Flight>
+    <Flight flightId="LX183">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>08:15:00</departure>
+        <arrival>10:01:00</arrival>        
+        <source>NPL</source>
+        <destination>AMS</destination>
+    </Flight>
+    <Flight flightId="LX184">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>10:40:00</departure>
+        <arrival>19:01:00</arrival>        
+        <source>NPL</source>
+        <destination>SPL</destination>
+    </Flight>
+    <Flight flightId="LX185">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>14:20:00</departure>
+        <arrival>23:11:00</arrival>        
+        <source>NPL</source>
+        <destination>SPL</destination>
+    </Flight>
+    <Flight flightId="LX186">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>17:17:00</departure>
+        <arrival>23:59:00</arrival>        
+        <source>NPL</source>
+        <destination>SPL</destination>
+    </Flight>
+    <Flight flightId="LX187">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>17:20:00</departure>
+        <arrival>23:00:00</arrival>        
+        <source>NPL</source>
+        <destination>SPL</destination>
+    </Flight>
+    <Flight flightId="LX188">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>08:40:00</departure> 
+        <arrival>10:01:00</arrival>        
+        <source>NPL</source>
+        <destination>SPL</destination>
+    </Flight>
+    <Flight flightId="LX189">
+        <seats>100</seats>
+        <date>2005-12-24</date>
+        <departure>13:18:00</departure>
+        <arrival>16:15:00</arrival>        
+        <source>NPL</source>
+        <destination>MSW</destination>
+    </Flight>
+</results>

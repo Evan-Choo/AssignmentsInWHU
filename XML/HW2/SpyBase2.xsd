@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xs:element name="spyTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" type="rowType" minOccurs="0" maxOccurs="unbounded">
+                    <xs:unique name="spyID_Unique">
+                        <xs:selector xpath="./row"/>
+                        <xs:field xpath="@spyID"/>
+                    </xs:unique>
+                    <xs:unique name="aID_Unique">
+                        <xs:selector xpath="./row/aliasList/alias"/>
+                        <xs:field xpath="@aID"/>
+                    </xs:unique>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="rowType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="missionList">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mission" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="date" type="xs:string"/>
+                                    <xs:element name="description" type="xs:string"/>
+                                    <xs:element name="status" type="xs:string"/>
+                                </xs:sequence>
+                                <xs:attribute name="mID" type="xs:string"/>
+                            </xs:complexType>
+                            <xs:unique name="mID_Unique">
+                                <xs:selector xpath="./mission"/>
+                                <xs:field xpath="@mID"/>
+                            </xs:unique>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="aliasList">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="alias" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="aID" type="xs:positiveInteger"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="spyID" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>

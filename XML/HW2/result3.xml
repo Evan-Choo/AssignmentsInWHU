@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <airport>
+        <name>FFT</name>
+        <passenegerSum>2</passenegerSum>
+    </airport>
+    <airport>
+        <name>LHR</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+    <airport>
+        <name>ZRH</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+    <airport>
+        <name>NPL</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+    <airport>
+        <name>SPL</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+    <airport>
+        <name>AMS</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+    <airport>
+        <name>PRG</name>
+        <passenegerSum>1</passenegerSum>
+    </airport>
+</results>

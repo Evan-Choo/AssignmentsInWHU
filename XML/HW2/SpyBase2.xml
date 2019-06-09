@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spyTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpyBase2.xsd">
+    <row spyID="A001">
+        <firstName>Nikki</firstName>
+        <lastName>Devgood</lastName>
+        
+        <missionList>
+            <mission mID="M101">
+                <date>2005/4/15</date>
+                <description>Crack the code</description>
+                <status>Mission Accomplished</status>
+            </mission>
+            
+            <mission mID="M102">
+                <date>2006/2/15</date>
+                <description>Get the source</description>
+                <status>Mission Accomplished</status>
+            </mission>
+            
+            <mission mID="M103">
+                <date>2006/5/4</date>
+                <description>Hit the rapid</description>
+                <status>In Progress</status>
+            </mission>
+        </missionList>
+        
+        <aliasList>
+            <alias aID="1">Spy Grrrl</alias>
+            <alias aID="2">La Femme Nikki</alias>
+        </aliasList>
+    </row>
+    
+    <row spyID="A006">
+        <firstName>Link</firstName>
+        <lastName>Lister</lastName>
+        
+        <missionList>
+            <mission mID="M104">
+                <date>2006/6/15</date>
+                <description>Shoot the rapid</description>
+                <status>In Progress</status>
+            </mission>
+        </missionList>
+        
+        <aliasList>
+            <alias aID="3">LL</alias>
+            <alias aID="4">Fred</alias>
+        </aliasList>
+    </row>
+    
+    <row spyID="A003">
+        <firstName>Danger</firstName>
+        <lastName>Mause</lastName>
+        
+        <missionList>
+            <mission mID="M105">
+                <date>2005/11/4</date>
+                <description>Get the big cheese</description>
+                <status>In Progress</status>
+            </mission>
+            
+            <mission mID="M106">
+                <date>2006/4/4</date>
+                <description>Map the area</description>
+                <status>In Progress</status>
+            </mission>
+        </missionList>
+        
+        <aliasList>
+            <alias aID="5">Big Ears</alias>
+        </aliasList>
+    </row>
+    
+    <row spyID="A099">
+        <firstName>Barbara</firstName>
+        <lastName>Feldon</lastName>
+        
+        <missionList>
+            <mission mID="M107">
+                <date>2006/5/2</date>
+                <description>Get Smart</description>
+                <status>In Progress</status>
+            </mission>
+        </missionList>
+        
+        <aliasList>
+        </aliasList>
+    </row>
+    
+    <row spyID="A004">
+        <firstName>Maxwell</firstName>
+        <lastName>Smart</lastName>
+        
+        <missionList>
+            <mission mID="M108">
+                <date>1967/2/15</date>
+                <description>Protect Chief</description>
+                <status>In Progress</status>
+            </mission>
+            
+            <mission mID="M109">
+                <date>2006/6/15</date>
+                <description>Get some style</description>
+                <status>Mission Accomplished</status>
+            </mission>
+        </missionList>
+        
+        <aliasList>
+            <alias aID="6">Inspector Gadget</alias>
+            <alias aID="7">Don Adams</alias>
+        </aliasList>
+    </row>
+</spyTable>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="aliasTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="row" type="alias_row" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:unique name="aID_Unique">
+                        <xs:selector xpath="./row"/>
+                        <xs:field xpath="@aID"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element name="missionTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="row" type="mission_row" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:unique name="mID_Unique">
+                        <xs:selector xpath="./row"/>
+                        <xs:field xpath="@mID"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element name="spyTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="row" type="spy_row" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:unique name="spyID_Unique">
+                        <xs:selector xpath="./row"/>
+                        <xs:field xpath="@spyID"/>
+                    </xs:unique>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="spyID_Key">
+            <xs:selector xpath="./spyTable/row"/>
+            <xs:field xpath="@spyID"/>
+        </xs:key>
+        <xs:keyref name="spyREF_Keyref" refer="spyID_Key">
+            <xs:selector xpath=".//row/spyREF"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+    </xs:element>
+    <xs:complexType name="alias_row">
+        <xs:sequence>
+            <xs:element name="spyREF">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:length value="4"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="alias" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="aID" type="xs:integer"/>
+    </xs:complexType>
+    <xs:complexType name="mission_row">
+        <xs:sequence>
+            <xs:element name="spyREF">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:length value="4"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="date">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="(\d{4})/(\d{1,2})/(\d{1,2})"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="status" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="mID">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:length value="4"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="spy_row">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="spyID">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:length value="4"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>
